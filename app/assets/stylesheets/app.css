@@ -31,6 +31,9 @@
 .center {
 	text-align: center;
 }
+.card {
+	margin-top: 32px;
+}
 .card .metadata {
 	font-size: 14px;
 	margin: 10px 0 0 8px;
