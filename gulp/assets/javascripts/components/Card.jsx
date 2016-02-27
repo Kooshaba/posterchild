@@ -1,10 +1,18 @@
 class Card extends React.Component {
   render() {
-    return <div className="card">
-      <h2> { this.props.title } </h2>
-      <h6> { this.props.date } </h6>
-      <img height="300px" width="300px" src={ this.props.imageUrl } />
-    </div>
+    return (
+      <div className="large-4 columns">
+        <div className="card">
+          <div className="image">
+            <img className="model-image" src={this.props.imageUrl} />
+          </div>
+          <div className="metadata">
+            <span className="model-name">{this.props.title}</span>
+            <span className="model-agency">Chadwick</span>
+          </div>
+        </div>
+      </div>
+    )
   }
 }
 

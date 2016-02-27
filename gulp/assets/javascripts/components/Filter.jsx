@@ -1,11 +1,9 @@
 class Filter extends React.Component {
   render() {
     return (
-      <div>
-        <a className={this.props.isSelected ? 'selected' : '' } href="">
-          { this.props.name }
-        </a>
-      </div>
+      <li className={this.props.isSelected ? 'selected' : '' }>
+        <a>{this.props.name}</a>
+      </li>
     )
   }
 }

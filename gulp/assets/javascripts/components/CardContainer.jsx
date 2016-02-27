@@ -15,7 +15,7 @@ class CardContainer extends React.Component {
   }
 
   render() {
-    return <div className="card-container">
+    return <div className="row card-container">
       { this.renderCards() }
     </div>
   }

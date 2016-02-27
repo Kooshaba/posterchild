@@ -18,8 +18,10 @@ class FilterBox extends React.Component {
   }
 
   render() {
-    return <div>
-      { this.filters() }
+    return <div className="large-4 columns filter">
+      <ul className="">
+        {this.filters()}
+      </ul>
     </div>
   }
 }
