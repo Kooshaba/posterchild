@@ -1,14 +1,31 @@
-#filters li {
-	list-style-type: none;
-	float: left;
-	margin-right: 16px;
+.sort-filter {
+	margin: 32px auto;
+}
+.filter {
+	margin: 0;
 	padding: 0;
 }
-
-#filters li a {
-	border-bottom: none;
+.filter ul li,
+.sort ul li {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
 }
-#filters li.selected a {
+.filter ul li {
+	float: left;
+	margin-right: 16px;
+}
+.sort ul li {
+	float: right;
+	margin-left: 16px;
+}
+.filter ul li a,
+.sort ul li a {
+	border-bottom: none;
+	padding-bottom: 4px;
+}
+.filter ul li.selected a,
+.sort ul li.selected a {
 	border-bottom: 2px solid #333333;
 }
 
@@ -17,13 +34,11 @@
 }
 .image {
 	width: 100%;
-	height: 366px;
 	background-color: #ffffff;
 	box-shadow: 0 10px 20px rgba(0,0,0,0.15)
 }
 .image img {
 	width: 100%;
-	height: 100%;
 	padding: 16px;
 	border: none;
 	background-color: ;
@@ -47,4 +62,7 @@
 }
 .headline {
 	padding: 32px 0 32px 0;
+}
+.footer {
+	margin-bottom: 128px;
 }
