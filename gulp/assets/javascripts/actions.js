@@ -13,3 +13,11 @@ export function toggleFilter(filterName) {
     filterName: filterName
   }
 }
+
+export const TOGGLE_SORT = 'TOGGLE_SORT'
+export function toggleSort(sortName) {
+  return {
+    type: TOGGLE_SORT,
+    sortName: sortName
+  }
+}

@@ -3,6 +3,7 @@ import FilterBox from './FilterBox.jsx'
 class Toolbar extends React.Component {
   render() {
     let filters = this.props.filters
+    let sorts = this.props.sorts
 
     return (
       <div>
@@ -20,14 +21,14 @@ class Toolbar extends React.Component {
             filters={[
               {
                 name: "Rank",
-                isSelected: true
+                isSelected: false
               },
               {
                 name: "Name",
                 isSelected: false
               }
             ]}
-            toggleFilter={this.props.toggleFilter}
+            toggleFilter={this.props.toggleSort}
           />
         </div>
       </div>
@@ -37,6 +38,7 @@ class Toolbar extends React.Component {
 
 Toolbar.propTypes = {
   toggleFilter: React.PropTypes.func.isRequired,
+  toggleSort: React.PropTypes.func.isRequired,
   filters: React.PropTypes.arrayOf(React.PropTypes.object).isRequired
 };
 

@@ -1,26 +1,33 @@
 import newState from './new_state'
-import { SET_DATASET, TOGGLE_FILTER } from '../actions'
+import { SET_DATASET, TOGGLE_FILTER, TOGGLE_SORT } from '../actions'
 
 const initialMainState = {
   dataset: [],
-  filters: []
+  filters: [],
+  sorts: []
 }
 
 export default function (state = initialMainState, action) {
   switch (action.type) {
     case SET_DATASET:
-      let tags = new Set()
+      let tagNames = new Set()
+      let sortNames = new Set()
+
       let newFilters = []
+      let newSorts = []
 
+      // fill in the filters
       action.dataset.forEach((datum) => {
-        datum.tags.forEach((tag) => tags.add(tag))
+        datum.tags.forEach((tag) => tagNames.add(tag))
+        Object.keys(datum.sorts).forEach((sortName) => sortNames.add(sortName))
       })
-
-      tags.forEach((tag) => newFilters.push({name: tag, isSelected: false}))
+      tagNames.forEach((tagName) => newFilters.push({name: tagName, isSelected: false}))
+      sortNames.forEach((sortName) => newSorts.push({name: sortName, isSelected: false}))
 
       return newState(state, {
         dataset: action.dataset,
-        filters: newFilters
+        filters: newFilters,
+        sorts: newSorts
       })
 
     case TOGGLE_FILTER:
@@ -33,6 +40,21 @@ export default function (state = initialMainState, action) {
 
       return newState(state, {
         filters: filters
+      })
+
+    case TOGGLE_SORT:
+      let sorts = state.sorts.map((sort) => {
+        if(sort.name === action.sortName) {
+          sort.isSelected = true
+        } else {
+          sort.isSelected = false
+        }
+
+        return sort
+      })
+
+      return newState(state, {
+        sorts: sorts
       })
 
     default:

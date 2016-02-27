@@ -12,7 +12,6 @@ class CardContainer extends React.Component {
           title={card.title}
           date={card.date}
           imageUrl={card.imageUrl}
-          tags={card.tags}
         />
       )
     })
@@ -36,13 +35,20 @@ let filterCards = (cards, filters) => {
   })
 }
 
+let sortCards = (cards, sorts) => {
+  let activeSort = sorts.find((s) => s.isSelected)
+  if (!activeSort) { return cards }
+
+  return _.sortBy(cards, (card) => card.sorts[activeSort.name] || 999999)
+}
+
 CardContainer.propTypes = {
   visibleCards: React.PropTypes.arrayOf(React.PropTypes.object).isRequired
 }
 
 let selectState = (state) => {
   return {
-    visibleCards: filterCards(state.main.dataset, state.main.filters)
+    visibleCards: sortCards(filterCards(state.main.dataset, state.main.filters), state.main.sorts)
   }
 }
 
