@@ -2,7 +2,9 @@ import { Provider } from 'react-redux'
 import { createStore, applyMiddleware } from 'redux'
 import thunk from 'redux-thunk'
 import { Router, Route, hashHistory } from 'react-router'
+
 import Main from './components/Main.jsx'
+import CardContainer from './components/CardContainer.jsx'
 
 import posterChildApp from './reducers/app'
 
@@ -13,7 +15,7 @@ const routes = {
   path: '#',
   component: Main,
   childRoutes: [
-    { path: '/*', component: Main }
+    { path: '/*', component: CardContainer }
   ]
 }
 

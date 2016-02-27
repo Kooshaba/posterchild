@@ -1,18 +1,15 @@
 import Filter from './Filter.jsx'
 
 class FilterBox extends React.Component {
-  filters() {
-    return this.props.allFilters.map((filter) => {
-      let isSelected = !!this.props.selectedFilters.find(
-        (selectedFilter) => {
-          return selectedFilter.name === filter.name
-        }
-      )
+  renderFilters() {
+    let filters = this.props.filters
 
+    return filters.map((filter) => {
       return <Filter
-        key={filter}
-        name={filter}
-        isSelected={isSelected}
+        key={filter.name}
+        name={filter.name}
+        isSelected={filter.isSelected}
+        toggleFilter={this.props.toggleFilter}
       />
     })
   }
@@ -20,15 +17,15 @@ class FilterBox extends React.Component {
   render() {
     return <div className="large-4 columns filter">
       <ul className="">
-        {this.filters()}
+        {this.renderFilters()}
       </ul>
     </div>
   }
 }
 
 FilterBox.propTypes = {
-  allFilters: React.PropTypes.arrayOf(React.PropTypes.string).isRequired,
-  selectedFilters: React.PropTypes.arrayOf(React.PropTypes.string).isRequired
+  filters: React.PropTypes.arrayOf(React.PropTypes.object).isRequired,
+  toggleFilter: React.PropTypes.func.isRequired
 }
 
 export default FilterBox

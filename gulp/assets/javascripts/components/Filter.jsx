@@ -2,7 +2,9 @@ class Filter extends React.Component {
   render() {
     return (
       <li className={this.props.isSelected ? 'selected' : '' }>
-        <a>{this.props.name}</a>
+        <a onClick={() => this.props.toggleFilter(this.props.name)}>
+          {this.props.name}
+        </a>
       </li>
     )
   }
@@ -10,7 +12,8 @@ class Filter extends React.Component {
 
 Filter.propTypes = {
   name: React.PropTypes.string.isRequired,
-  isSelected: React.PropTypes.bool.isRequired
+  isSelected: React.PropTypes.bool.isRequired,
+  toggleFilter: React.PropTypes.func
 }
 
 export default Filter

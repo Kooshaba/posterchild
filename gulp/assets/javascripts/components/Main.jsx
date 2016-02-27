@@ -1,9 +1,16 @@
 import moment from 'moment'
+import { connect } from 'react-redux'
 
 import Toolbar from './Toolbar.jsx'
 import CardContainer from './CardContainer.jsx'
 
+import * as actions from '../actions'
+
 class Main extends React.Component {
+
+  componentDidMount() {
+    this.props.dispatch(actions.setDataset(this.sampleData()))
+  }
 
   sampleData() {
     return [
@@ -22,14 +29,33 @@ class Main extends React.Component {
     ]
   }
 
+  toggleFilter(filter) {
+    this.props.dispatch(actions.toggleFilter(filter))
+  }
+
   render() {
     return (
       <div>
-         <Toolbar />
-         <CardContainer visibleCards={this.sampleData()}/>
+        <Toolbar
+          filters={this.props.filters}
+          toggleFilter={this.toggleFilter.bind(this)}
+        />
+        <div>
+          { this.props.children }
+        </div>
        </div>
     )
   }
 }
 
-export default Main
+Main.propTypes = {
+  filters: React.PropTypes.arrayOf(React.PropTypes.object).isRequired
+};
+
+let selectState = (state) => {
+  return {
+    filters: state.main.filters
+  }
+}
+
+export default connect(selectState)(Main)
