@@ -5,28 +5,31 @@ class Toolbar extends React.Component {
     let filters = this.props.filters
 
     return (
-      <div className="row sort-filter">
-        <FilterBox filters={filters} toggleFilter={this.props.toggleFilter}/>
-        <div className="large-4 columns center">
-          <h1>
-            <a id="logo" href="">
-              <img className="model-image" src="../../../app/assets/images/logo.svg" />
-            </a>
-          </h1>
+      <div>
+        <div className="row">
+          <div className="large-12 columns">
+            <p className="center headline">Model citizens. Where culture begins. <a href="">Invitation</a> only.</p>
+          </div>
         </div>
-        <FilterBox
-          filters={[
-            {
-              name: "Rank",
-              isSelected: true
-            },
-            {
-              name: "Name",
-              isSelected: false
-            }
-          ]}
-          toggleFilter={this.props.toggleFilter}
-        />
+        <div className="row toolbar">
+          <div className="large-4 large-push-4 columns center">
+            <h1><a id="logo" href=""><img src="images/logo.svg" /></a></h1>
+          </div>
+          <FilterBox filters={filters} toggleFilter={this.props.toggleFilter}/>
+          <FilterBox
+            filters={[
+              {
+                name: "Rank",
+                isSelected: true
+              },
+              {
+                name: "Name",
+                isSelected: false
+              }
+            ]}
+            toggleFilter={this.props.toggleFilter}
+          />
+        </div>
       </div>
     )
   }

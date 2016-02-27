@@ -1,7 +1,7 @@
 class Card extends React.Component {
   render() {
     return (
-      <div className="large-4 columns">
+      <div className="large-4 medium-6 columns">
         <div className="card">
           <div className="image">
             <img className="model-image" src={this.props.imageUrl} />

@@ -16,15 +16,45 @@ class Main extends React.Component {
     return [
       {
         id: 1,
-        title: 'Sophie Arvebrink',
-        imageUrl: 'https://instagram.fsnc1-1.fna.fbcdn.net/t51.2885-15/e35/11875263_956127961114362_1447221200_n.jpg?ig_cache_key=MTA3MTkwNTE4OTk1NjU1NTg0MQ%3D%3D.2',
-        date: moment().format("DD/MM/YYYY h:mm A").toString()
+        title: 'Jane Smith',
+        imageUrl: 'images/1.jpg',
+        date: moment().format("DD/MM/YYYY h:mm A").toString(),
+        tags: ['Sydney']
       },
       {
         id: 2,
-        title: 'Sophie Arvebrink',
-        imageUrl: 'https://instagram.fsnc1-1.fna.fbcdn.net/t51.2885-15/e35/11875263_956127961114362_1447221200_n.jpg?ig_cache_key=MTA3MTkwNTE4OTk1NjU1NTg0MQ%3D%3D.2',
-        date: moment().format("DD/MM/YYYY h:mm A").toString()
+        title: 'Helene Doe',
+        imageUrl: 'images/2.jpg',
+        date: moment().format("DD/MM/YYYY h:mm A").toString(),
+        tags: ['Sydney']
+      },
+      {
+        id: 3,
+        title: 'Jacintha Campbell',
+        imageUrl: 'images/3.jpg',
+        date: moment().format("DD/MM/YYYY h:mm A").toString(),
+        tags: ['Sydney']
+      },
+      {
+        id: 4,
+        title: 'Stacey Smith',
+        imageUrl: 'images/4.jpg',
+        date: moment().format("DD/MM/YYYY h:mm A").toString(),
+        tags: ['Melbourne']
+      },
+      {
+        id: 5,
+        title: 'Ana Burgeoux',
+        imageUrl: 'images/5.jpg',
+        date: moment().format("DD/MM/YYYY h:mm A").toString(),
+        tags: ['Melbourne']
+      },
+      {
+        id: 6,
+        title: 'Kasia Wawyryska',
+        imageUrl: 'images/6.jpg',
+        date: moment().format("DD/MM/YYYY h:mm A").toString(),
+        tags: ['Melbourne']
       }
     ]
   }

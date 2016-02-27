@@ -15,7 +15,7 @@ class FilterBox extends React.Component {
   }
 
   render() {
-    return <div className="large-4 columns filter">
+    return <div className="large-4 large-pull-4 medium-6 small-6 columns filter">
       <ul className="">
         {this.renderFilters()}
       </ul>

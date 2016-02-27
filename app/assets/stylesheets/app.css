@@ -1,29 +1,41 @@
-.sort-filter {
+html {
+	margin-bottom: 128px;
+}
+
+/*** tool bar ***/
+
+.toolbar {
 	margin: 32px auto;
 }
+
 .filter {
 	margin: 0;
 	padding: 0;
 }
+
 .filter ul li,
 .sort ul li {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
 }
+
 .filter ul li {
 	float: left;
 	margin-right: 16px;
 }
+
 .sort ul li {
 	float: right;
 	margin-left: 16px;
 }
+
 .filter ul li a,
 .sort ul li a {
 	border-bottom: none;
 	padding-bottom: 4px;
 }
+
 .filter ul li.selected a,
 .sort ul li.selected a {
 	border-bottom: 2px solid #333333;
@@ -32,6 +44,7 @@
 #logo {
 	border-bottom: none;
 }
+
 .image {
 	width: 100%;
 	background-color: #ffffff;
@@ -65,4 +78,13 @@
 }
 .footer {
 	margin-bottom: 128px;
+}
+
+@media only screen and (max-width: 64em) {
+	#logo {
+		padding-bottom: 32px;
+	}
+}
+h1 {
+	font-size: 1em;
 }
