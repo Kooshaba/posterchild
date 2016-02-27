@@ -1,0 +1,47 @@
+#filters li {
+	list-style-type: none;
+	float: left;
+	margin-right: 16px;
+	padding: 0;
+}
+
+#filters li a {
+	border-bottom: none;
+}
+#filters li.selected a {
+	border-bottom: 2px solid #333333;
+}
+
+#logo {
+	border-bottom: none;
+}
+.image {
+	width: 100%;
+	height: 366px;
+	background-color: #ffffff;
+	box-shadow: 0 10px 20px rgba(0,0,0,0.15)
+}
+.image img {
+	width: 100%;
+	height: 100%;
+	padding: 16px;
+	border: none;
+	background-color: ;
+}
+.center {
+	text-align: center;
+}
+.card .metadata {
+	font-size: 14px;
+	margin: 10px 0 0 8px;
+}
+.card .model-name {
+	display: block;
+}
+.card .model-agency {
+	display: block;
+	color: #aaaaaa;
+}
+.headline {
+	padding: 32px 0 32px 0;
+}
