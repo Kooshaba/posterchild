@@ -14,5 +14,6 @@
 //= require react
 //= require react_ujs
 //= require jquery
-//= require global
+//= require_tree ./vendor
 //= require_tree .
+//= require global
