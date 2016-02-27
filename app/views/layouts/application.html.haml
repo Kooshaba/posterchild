@@ -1,0 +1,13 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %script{ type: 'text/javascript', src: '//use.typekit.net/uhg5iki.js' }
+    %script{ type: 'text/javascript' } try{Typekit.load();}catch(e){}
+    %title Posterchild
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+    = csrf_meta_tags
+  %body
+    %main#main-container
+      = javascript_include_tag 'application', 'data-turbolinks-track' => true
+      = yield
