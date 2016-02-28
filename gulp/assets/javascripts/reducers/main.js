@@ -7,6 +7,16 @@ const initialMainState = {
   sorts: []
 }
 
+const nextSort = (sortName) => {
+  const sortMapping = {
+    "none": "asc",
+    "asc": "desc",
+    "desc": "none"
+  }
+
+  return sortMapping[sortName]
+}
+
 export default function (state = initialMainState, action) {
   switch (action.type) {
     case SET_DATASET:
@@ -22,7 +32,7 @@ export default function (state = initialMainState, action) {
         Object.keys(datum.sorts).forEach((sortName) => sortNames.add(sortName))
       })
       tagNames.forEach((tagName) => newFilters.push({name: tagName, isSelected: false}))
-      sortNames.forEach((sortName) => newSorts.push({name: sortName, isSelected: false}))
+      sortNames.forEach((sortName) => newSorts.push({name: sortName, order: 'none'}))
 
       return newState(state, {
         dataset: action.dataset,
@@ -44,12 +54,8 @@ export default function (state = initialMainState, action) {
 
     case TOGGLE_SORT:
       let sorts = state.sorts.map((sort) => {
-        if(sort.name === action.sortName) {
-          sort.isSelected = true
-        } else {
-          sort.isSelected = false
-        }
-
+        let sortMatches = sort.name === action.sortName
+        sort.order = sortMatches ? nextSort(sort.order) : 'none'
         return sort
       })
 

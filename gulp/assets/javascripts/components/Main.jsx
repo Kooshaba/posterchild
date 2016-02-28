@@ -86,15 +86,18 @@ class Main extends React.Component {
   }
 
   render() {
+    let { filters, sorts, children } = this.props
+
     return (
       <div>
         <Toolbar
-          filters={this.props.filters}
+          filters={filters}
+          sorts={sorts}
           toggleFilter={this.toggleFilter.bind(this)}
           toggleSort={this.toggleSort.bind(this)}
         />
         <div>
-          { this.props.children }
+          { children }
         </div>
        </div>
     )

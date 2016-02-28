@@ -18,16 +18,7 @@ class Toolbar extends React.Component {
           </div>
           <FilterBox filters={filters} toggleFilter={this.props.toggleFilter}/>
           <FilterBox
-            filters={[
-              {
-                name: "Rank",
-                isSelected: false
-              },
-              {
-                name: "Name",
-                isSelected: false
-              }
-            ]}
+            filters={sorts}
             toggleFilter={this.props.toggleSort}
           />
         </div>
@@ -39,7 +30,8 @@ class Toolbar extends React.Component {
 Toolbar.propTypes = {
   toggleFilter: React.PropTypes.func.isRequired,
   toggleSort: React.PropTypes.func.isRequired,
-  filters: React.PropTypes.arrayOf(React.PropTypes.object).isRequired
+  filters: React.PropTypes.arrayOf(React.PropTypes.object).isRequired,
+  sorts: React.PropTypes.arrayOf(React.PropTypes.object).isRequired
 };
 
 export default Toolbar

@@ -36,10 +36,11 @@ let filterCards = (cards, filters) => {
 }
 
 let sortCards = (cards, sorts) => {
-  let activeSort = sorts.find((s) => s.isSelected)
+  let activeSort = sorts.find((s) => s.order !== 'none')
   if (!activeSort) { return cards }
 
-  return _.sortBy(cards, (card) => card.sorts[activeSort.name] || 999999)
+  let sortedCards = _.sortBy(cards, (card) => card.sorts[activeSort.name])
+  return activeSort.order === 'desc' ? sortedCards.reverse() : sortedCards
 }
 
 CardContainer.propTypes = {
