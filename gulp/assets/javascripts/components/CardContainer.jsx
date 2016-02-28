@@ -12,6 +12,7 @@ class CardContainer extends React.Component {
           title={card.title}
           date={card.date}
           imageUrl={card.imageUrl}
+          subtitle={card.subtitle}
         />
       )
     })

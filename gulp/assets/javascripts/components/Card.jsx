@@ -8,7 +8,7 @@ class Card extends React.Component {
           </div>
           <div className="metadata">
             <span className="model-name">{this.props.title}</span>
-            <span className="model-agency">Chadwick</span>
+            <span className="model-agency">{this.props.subtitle}</span>
           </div>
         </div>
       </div>

@@ -16,8 +16,12 @@ class Toolbar extends React.Component {
           <div className="large-4 large-push-4 columns center">
             <h1><a id="logo" href=""><img src="images/logo.svg" /></a></h1>
           </div>
-          <FilterBox filters={filters} toggleFilter={this.props.toggleFilter}/>
           <FilterBox
+            type="filter"
+            filters={filters}
+            toggleFilter={this.props.toggleFilter}/>
+          <FilterBox
+            type="sort"
             filters={sorts}
             toggleFilter={this.props.toggleSort}
           />
