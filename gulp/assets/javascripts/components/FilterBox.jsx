@@ -8,7 +8,7 @@ class FilterBox extends React.Component {
       return <Filter
         key={filter.name}
         name={filter.name}
-        isSelected={filter.isSelected || filter.order !== 'none'}
+        isSelected={filter.isSelected || (filter.order !== 'none' && !!filter.order)}
         toggleFilter={this.props.toggleFilter}
       />
     })
