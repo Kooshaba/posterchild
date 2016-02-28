@@ -7,10 +7,10 @@ export function setDataset(dataset) {
 }
 
 export const TOGGLE_FILTER = 'TOGGLE_FILTER'
-export function toggleFilter(filterName) {
+export function toggleFilter(filterValue) {
   return {
     type: TOGGLE_FILTER,
-    filterName: filterName
+    filterValue: filterValue
   }
 }
 

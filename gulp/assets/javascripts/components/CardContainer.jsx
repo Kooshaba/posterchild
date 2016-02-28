@@ -26,13 +26,14 @@ class CardContainer extends React.Component {
 }
 
 let filterCards = (cards, filters) => {
-  let activeTags = filters.filter((f) => f.isSelected)
-    .map((filter) => filter.name)
+  let activeTags = _.reduce(filters.map((f) => f.selectedValues), (activeTags, selectedValues) => {
+    return activeTags.concat(selectedValues)
+  }, [])
 
   if(activeTags.length === 0) { return cards }
 
   return cards.filter((card) => {
-    return _.intersection(card.tags, activeTags).length !== 0
+    return _.intersection(_.values(card.tags), activeTags).length !== 0
   })
 }
 

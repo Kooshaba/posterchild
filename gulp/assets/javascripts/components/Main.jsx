@@ -23,7 +23,7 @@ class Main extends React.Component {
         instagramUrl: 'https://www.instagram.com/aimee_manton/',
         agencyUrl: 'http://www.viviensmodels.com.au/models/aimee/',
         date: moment().format("DD/MM/YYYY h:mm A").toString(),
-        tags: ['Melbourne'],
+        tags: {"City": 'Melbourne', "Hair Color": "Brunette" },
         sorts: {
           "Followers": 4143,
           "Agency": "Viviens"
@@ -38,7 +38,7 @@ class Main extends React.Component {
         instagramUrl: 'https://www.instagram.com/tanyaalers/',
         agencyUrl: 'http://chadwickmodels.com/models/tanya-alers/',
         date: moment().format("DD/MM/YYYY h:mm A").toString(),
-        tags: ['Melbourne'],
+        tags: {"City": 'Melbourne', "Hair Color": "Blonde" },
         sorts: {
           "Followers": 593,
           "Agency": "Chadwick"
@@ -53,7 +53,7 @@ class Main extends React.Component {
         instagramUrl: 'https://www.instagram.com/aamelia.dunn/',
         agencyUrl: 'http://www.scenemodels.com/models/melbourne/amelia-dunn/',
         date: moment().format("DD/MM/YYYY h:mm A").toString(),
-        tags: ['Melbourne'],
+        tags: {"City": 'Melbourne', "Hair Color": "Brunette" },
         sorts: {
           "Followers": 875,
           "Agency": "Scene"
@@ -68,7 +68,7 @@ class Main extends React.Component {
         instagramUrl: 'https://www.instagram.com/amyjjean_/',
         agencyUrl: 'http://www.viviensmodels.com.au/models/amy-jean-2/',
         date: moment().format("DD/MM/YYYY h:mm A").toString(),
-        tags: ['Melbourne'],
+        tags: {"City": 'Melbourne', "Hair Color": "Brunette" },
         sorts: {
           "Followers": 112,
           "Agency": "Viviens"
@@ -83,7 +83,7 @@ class Main extends React.Component {
         instagramUrl: 'https://www.instagram.com/amy_staunton/',
         agencyUrl: 'http://www.viviensmodels.com.au/models/amy-staunton/',
         date: moment().format("DD/MM/YYYY h:mm A").toString(),
-        tags: ['Melbourne'],
+        tags: {"City": 'Melbourne', "Hair Color": "Blonde" },
         sorts: {
           "Followers": 2332,
           "Agency": "Viviens"
@@ -98,7 +98,7 @@ class Main extends React.Component {
         instagramUrl: 'https://www.instagram.com/andrejapejic/',
         agencyUrl: 'http://chadwickmodels.com/models/andreja-pejic/',
         date: moment().format("DD/MM/YYYY h:mm A").toString(),
-        tags: ['Melbourne'],
+        tags: {"City": 'Melbourne', "Hair Color": "Blonde" },
         sorts: {
           "Followers": 198000,
           "Agency": "Chadwick"
@@ -113,7 +113,7 @@ class Main extends React.Component {
         instagramUrl: 'https://www.instagram.com/aniandseb/',
         agencyUrl: 'http://www.viviensmodels.com.au/models/ania-novak-melbourne/',
         date: moment().format("DD/MM/YYYY h:mm A").toString(),
-        tags: ['Melbourne'],
+        tags: {"City": 'Melbourne', "Hair Color": "Blonde" },
         sorts: {
           "Followers": 84,
           "Agency": "Viviens"
@@ -128,7 +128,7 @@ class Main extends React.Component {
         instagramUrl: 'https://www.instagram.com/annadavoll/?hl=en',
         agencyUrl: 'http://www.viviensmodels.com.au/models/anna-davoll-sydney/',
         date: moment().format("DD/MM/YYYY h:mm A").toString(),
-        tags: ['Melbourne'],
+        tags: {"City": 'Melbourne', "Hair Color": "Blonde" },
         sorts: {
           "Followers": 3468,
           "Agency": "Viviens"
@@ -143,7 +143,7 @@ class Main extends React.Component {
         instagramUrl: 'https://www.instagram.com/annajofficial/',
         agencyUrl: 'http://www.viviensmodels.com.au/models/anna-jagodzinska/',
         date: moment().format("DD/MM/YYYY h:mm A").toString(),
-        tags: ['Brisbane'],
+        tags: {"City": 'Brisbane', "Hair Color": "Blonde" },
         sorts: {
           "Followers": 9448,
           "Agency": "Viviens"
@@ -158,7 +158,7 @@ class Main extends React.Component {
         instagramUrl: 'https://www.instagram.com/annamcevoy21/',
         agencyUrl: 'http://chadwickmodels.com/models/anna-mcevoy/',
         date: moment().format("DD/MM/YYYY h:mm A").toString(),
-        tags: ['Melbourne'],
+        tags: {"City": 'Melbourne', "Hair Color": "Brunette" },
         sorts: {
           "Followers": 74800,
           "Agency": "Chadwick"
@@ -173,7 +173,7 @@ class Main extends React.Component {
         instagramUrl: 'https://www.instagram.com/annaleisesmith/',
         agencyUrl: 'http://chadwickmodels.com/models/annaleise-smith/',
         date: moment().format("DD/MM/YYYY h:mm A").toString(),
-        tags: ['Melbourne'],
+        tags: {"City": 'Melbourne', "Hair Color": "Brunette" },
         sorts: {
           "Followers": 719,
           "Agency": "Chadwick"
@@ -188,7 +188,7 @@ class Main extends React.Component {
         instagramUrl: 'https://www.instagram.com/iamanniebugden/',
         agencyUrl: 'http://chadwickmodels.com/models/annie-bugden/',
         date: moment().format("DD/MM/YYYY h:mm A").toString(),
-        tags: ['Melbourne'],
+        tags: {"City": 'Melbourne', "Hair Color": "Blonde" },
         sorts: {
           "Followers": 1137,
           "Agency": "Chadwick"
@@ -203,7 +203,7 @@ class Main extends React.Component {
         instagramUrl: 'https://www.instagram.com/nushfreedman/',
         agencyUrl: 'http://chadwickmodels.com/models/anouska/',
         date: moment().format("DD/MM/YYYY h:mm A").toString(),
-        tags: ['Melbourne'],
+        tags: {"City": 'Melbourne', "Hair Color": "Blonde" },
         sorts: {
           "Followers": 2209,
           "Agency": "Chadwick"
@@ -218,7 +218,7 @@ class Main extends React.Component {
         instagramUrl: 'https://www.instagram.com/nellaloisio/',
         agencyUrl: 'http://www.viviensmodels.com.au/models/antonella/',
         date: moment().format("DD/MM/YYYY h:mm A").toString(),
-        tags: ['Melbourne'],
+        tags: {"City": 'Melbourne', "Hair Color": "Blonde" },
         sorts: {
           "Followers": 10900,
           "Agency": "Viviens"
@@ -233,7 +233,7 @@ class Main extends React.Component {
         instagramUrl: 'https://www.instagram.com/antoninapetkovic/?hl=en',
         agencyUrl: 'http://www.viviensmodels.com.au/models/antonina-petkovic/',
         date: moment().format("DD/MM/YYYY h:mm A").toString(),
-        tags: ['Brisbane'],
+        tags: {"City": 'Brisbane', "Hair Color": "Blonde" },
         sorts: {
           "Followers": 18700,
           "Agency": "Viviens"
@@ -248,7 +248,7 @@ class Main extends React.Component {
         instagramUrl: 'https://www.instagram.com/ASHIKA_PRATT/',
         agencyUrl: 'http://chadwickmodels.com/models/ashika/',
         date: moment().format("DD/MM/YYYY h:mm A").toString(),
-        tags: ['Melbourne'],
+        tags: {"City": 'Melbourne', "Hair Color": "Blonde" },
         sorts: {
           "Followers": 17000,
           "Agency": "Chadwick"
@@ -263,7 +263,7 @@ class Main extends React.Component {
         instagramUrl: 'https://www.instagram.com/ashleighwesseling/',
         agencyUrl: 'http://chadwickmodels.com/models/ashleigh-wesseling/',
         date: moment().format("DD/MM/YYYY h:mm A").toString(),
-        tags: ['Sydney'],
+        tags: {"City": 'Sydney', "Hair Color": "Blonde" },
         sorts: {
           "Followers": 1677,
           "Agency": "Chadwick"
@@ -278,7 +278,7 @@ class Main extends React.Component {
         instagramUrl: 'https://www.instagram.com/ashleyhart1111/',
         agencyUrl: 'http://chadwickmodels.com/models/ashley-hart/',
         date: moment().format("DD/MM/YYYY h:mm A").toString(),
-        tags: ['Melbourne'],
+        tags: {"City": 'Melbourne', "Hair Color": "Blonde" },
         sorts: {
           "Followers": 65900,
           "Agency": "Chadwick"
@@ -293,7 +293,7 @@ class Main extends React.Component {
         instagramUrl: 'https://www.instagram.com/ASHLEY_OH/',
         agencyUrl: 'http://chadwickmodels.com/models/ashley-osborne/',
         date: moment().format("DD/MM/YYYY h:mm A").toString(),
-        tags: ['Sydney'],
+        tags: {"City": 'Sydney', "Hair Color": "Blonde" },
         sorts: {
           "Followers": 102000,
           "Agency": "Chadwick"
@@ -308,7 +308,7 @@ class Main extends React.Component {
         instagramUrl: 'https://www.instagram.com/asiapiwka/?hl=en',
         agencyUrl: 'http://www.viviensmodels.com.au/models/asia-piwka/',
         date: moment().format("DD/MM/YYYY h:mm A").toString(),
-        tags: ['Brisbane'],
+        tags: {"City": 'Brisbane', "Hair Color": "Blonde" },
         sorts: {
           "Followers": 8172,
           "Agency": "Viviens"
@@ -323,7 +323,7 @@ class Main extends React.Component {
         instagramUrl: 'https://www.instagram.com/babsdej/',
         agencyUrl: 'http://chadwickmodels.com/models/babs/',
         date: moment().format("DD/MM/YYYY h:mm A").toString(),
-        tags: ['Sydney'],
+        tags: {"City": 'Sydney', "Hair Color": "Blonde" },
         sorts: {
           "Followers": 712,
           "Agency": "Chadwick"

@@ -4,14 +4,32 @@ class FilterBox extends React.Component {
   renderFilters() {
     let filters = this.props.filters
 
-    return filters.map((filter) => {
-      return <Filter
-        key={filter.name}
-        name={filter.name}
-        isSelected={filter.isSelected || (filter.order !== 'none' && !!filter.order)}
-        toggleFilter={this.props.toggleFilter}
-      />
-    })
+    if (this.props.type === 'sort') {
+      return filters.map((filter) => {
+        return <Filter
+          key={filter.name}
+          name={filter.name}
+          isSelected={(filter.order !== 'none')}
+          toggleFilter={this.props.toggleFilter}
+        />
+      })
+    } else {
+      return filters.map((filter) => {
+        return <li key={filter.name}>
+          { filter.name }
+          <ul>
+            { filter.values.map((value) => {
+              return <Filter
+                key={value}
+                name={value}
+                isSelected={filter.selectedValues.indexOf(value) >= 0}
+                toggleFilter={this.props.toggleFilter}
+              />
+            }) }
+          </ul>
+        </li>
+      })
+    }
   }
 
   render() {
