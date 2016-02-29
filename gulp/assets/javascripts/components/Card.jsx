@@ -18,8 +18,7 @@ class Card extends React.Component {
 
 Card.propTypes = {
   imageUrl: React.PropTypes.string.isRequired,
-  title: React.PropTypes.string.isRequired,
-  date: React.PropTypes.string.isRequired
+  title: React.PropTypes.string.isRequired
 }
 
 export default Card

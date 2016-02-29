@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   # devise_scope :user do
   #   root to: "devise/sessions#new"
   # end
-
+  
   root to: "home#index"
+  get '/dataset', to: 'dataset#index'
 end
