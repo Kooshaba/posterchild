@@ -50,10 +50,12 @@ class FilterBox extends React.Component {
 
   render() {
     return <div className={`large-4 medium-6 small-6 columns ${this.props.type === 'sort' ? 'sort' : 'filter large-pull-4'}`}>
-      <a className="button" onClick={() => this.toggleActive()} href="#">Filters</a>
-      <ul className={`dropdown ${ this.state.active ? '' : 'hidden' }`}>
-        {this.renderFilters()}
-      </ul>
+      <div className="dropdown-container">
+        <a className="button" onClick={() => this.toggleActive()} href="#">{this.props.type === 'sort' ? 'Sort' : 'Filters'}</a>
+        <ul className={`dropdown ${ this.state.active ? '' : 'hidden' }`}>
+          {this.renderFilters()}
+        </ul>
+      </div>
     </div>
   }
 }

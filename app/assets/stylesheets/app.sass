@@ -15,6 +15,7 @@ $white: #ffffff
 /*** button ***/
 
 .button
+	height: 40px
 	border: none
 
 	&:hover, &:focus
@@ -79,9 +80,20 @@ $white: #ffffff
 	margin: 32px auto
 	padding: 0 16px
 
-.filter
+.filter, .sort
 	margin: 0
 	padding: 0
+
+.sort .dropdown-container
+	float: right
+
+.sort ul
+	position: absolute
+	margin: 40px 0 0 -183px
+
+.sort .button
+	float: right
+
 
 // .filter ul li,
 // .sort ul li
