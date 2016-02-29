@@ -1,0 +1,155 @@
+html
+	margin-bottom: 128px
+
+/*** colors ***/
+
+$black: #333333
+$grey: #aaaaaa
+$light-grey: #dddddd
+$washed-out: #f5f5f5
+$white: #ffffff
+
+.hidden
+	visibility: hidden
+
+/*** button ***/
+
+.button
+	border: none
+
+	&:hover, &:focus
+		border: none
+
+
+/*** dropdown ***/
+
+.dropdown
+	position: absolute
+	padding: 0 0 24px 0
+	background-color: $white
+	border-radius: 3px
+	box-shadow: 0 15px 45px rgba(0,0,0,0.15)
+	margin-top: -16px
+	margin-left: -16px
+	z-index: 100
+	width: 256px
+
+	li
+		box-sizing: content-box
+		display: block
+		border: none
+
+	ul
+		margin: 0
+		padding: 0
+
+.dropdown li a,
+.dropdown li.group-name
+	display: block
+	height:	40px
+	line-height: 40px
+	padding: 0 16px
+	border: none	
+
+.dropdown li.group-name
+	text-transform: uppercase
+	color: $light-grey
+	font-size: 12px
+	font-weight: bold
+	letter-spacing: 2px
+	padding-top: 16px
+
+.dropdown li a:hover
+	background-color: $washed-out
+
+/*** tick ***/
+
+.tick
+	display: inline-block
+	width: 16px
+	height: 16px
+	margin-right: 16px
+	margin-bottom: -2px
+	background-image: image-url('tick.svg')
+
+
+/*** tool bar ***/
+
+.toolbar
+	margin: 32px auto
+	padding: 0 16px
+
+.filter
+	margin: 0
+	padding: 0
+
+// .filter ul li,
+// .sort ul li
+// 	list-style-type: none
+// 	margin: 0
+// 	padding: 0
+
+// .filter ul li
+// 	float: left
+// 	margin-right: 16px
+
+// .sort ul li
+// 	float: right
+// 	margin-left: 16px
+
+// .filter ul li a,
+// .sort ul li a
+// 	border-bottom: none
+// 	padding-bottom: 4px
+
+// .filter ul li.selected a,
+// .sort ul li.selected a
+// 	border-bottom: 2px solid $black
+
+#logo
+	border-bottom: none
+	width: 300px
+
+.image
+	width: 100%
+	background-color: $white
+	box-shadow: 0 5px 15px rgba(0,0,0,0.15)
+	transition: all 0.15s ease-out
+
+.image:hover
+	box-shadow: 0 12px 36px rgba(0,0,0,0.4)
+
+.image img
+	width: 100%
+	padding: 16px
+	border: none
+
+.center
+	text-align: center
+
+.card
+	margin-top: 32px
+
+.card .metadata
+	font-size: 14px
+	margin: 10px 0 0 8px
+
+.card .model-name
+	display: block
+
+.card .model-agency
+	display: block
+	color: $light-grey
+
+.headline
+	padding: 32px 0 32px 0
+
+.footer
+	margin-bottom: 128px
+
+@media only screen and (max-width: 64em)
+	#logo
+		padding-bottom: 32px
+
+h1
+	font-size: 1em

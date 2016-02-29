@@ -36,6 +36,7 @@
     "gulp-util": "^3.0.0",
     "gulp-watch": "^4.1.1",
     "lodash": "^2.4.2",
+    "lodash.mergewith": "^4.3.1",
     "merge-stream": "^0.1.7",
     "moment": "^2.10.6",
     "pretty-hrtime": "~0.2.1",

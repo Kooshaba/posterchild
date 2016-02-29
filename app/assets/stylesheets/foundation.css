@@ -1463,18 +1463,17 @@ kbd {
   -webkit-appearance: none;
   transition: background-color 0.25s ease-out, color 0.25s ease-out;
   vertical-align: middle;
-  border: 1px solid transparent;
-  border-radius: 0;
+  border-radius: 3px;
   padding: 0.85em 1em;
   margin: 0 0 1rem 0;
   font-size: 0.9rem;
-  background-color: #2199e8;
-  color: #fefefe; }
+  background-color: #f5f5f5;
+  color: #333333; }
   [data-whatinput='mouse'] .button {
     outline: 0; }
   .button:hover, .button:focus {
-    background-color: #1583cc;
-    color: #fefefe; }
+    background-color: #dddddd;
+    color: #333333; }
   .button.tiny {
     font-size: 0.6rem; }
   .button.small {
@@ -1487,17 +1486,17 @@ kbd {
     margin-left: 0;
     margin-right: 0; }
   .button.primary {
-    background-color: #2199e8;
-    color: #fefefe; }
+    background-color: #333333;
+    color: #ffffff; }
     .button.primary:hover, .button.primary:focus {
-      background-color: #147cc0;
-      color: #fefefe; }
+      background-color: #222222;
+      color: #ffffff; }
   .button.secondary {
-    background-color: #777;
-    color: #fefefe; }
+    background-color: #f5f5f5;
+    color: #333333; }
     .button.secondary:hover, .button.secondary:focus {
-      background-color: #5f5f5f;
-      color: #fefefe; }
+      background-color: #dddddd;
+      color: #333333; }
   .button.success {
     background-color: #3adb76;
     color: #fefefe; }

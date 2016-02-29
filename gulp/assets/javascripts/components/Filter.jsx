@@ -3,6 +3,7 @@ class Filter extends React.Component {
     return (
       <li className={`${this.props.isSelected ? 'selected' : ''}`}>
         <a onClick={() => this.props.toggleFilter(this.props.name)}>
+          <span className={`tick ${this.props.isSelected ? '' : 'hidden'}`}></span>
           {this.props.name}
         </a>
       </li>
